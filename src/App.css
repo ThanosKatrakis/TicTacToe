@@ -1,38 +1,26 @@
-.App {
+/***** Square Component *****/
+.square {
+  background: white;
+  border: 1px solid gray;
+  float: left;
+  margin-right: -1px; /* --<> we do that to remove additional margin from border*/
+  margin-top: -1px;
+  padding: 0;
+  width: 80px;
+  height: 80px;
   text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 80px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.square:focus {
+  outline: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/***** Board Component *****/
+.board-row::after {
+  clear: both; /* --<> we need to set next box on a new line */
+  content: "";
+  display: table;
 }
