@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-// We include our square component
-import Square from './Square'
+import Square from './Square' // We include our square component
 
 // We create a react class component
 export default class Board extends Component {

@@ -1,10 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import Game from './Components/Game';
+import MainComponent from './Components/MainComponent';
 
 function App() {
   return (
-    <Game />
+    <MainComponent />
   );
 }
 
