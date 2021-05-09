@@ -6,7 +6,7 @@ export default class MainComponent extends Component {
     render() {
         return(
             <div>
-                
+                <NavBar />
                 <Game />
             </div>
         );
