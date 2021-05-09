@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 /***** Body *****/
 body {
   background-color: rgb(26, 26, 26);
@@ -128,12 +134,47 @@ body {
 ol,
 ul {
   padding-left: 30px;
+  color: #fff;
 }
 
 .game-info {
   margin-left: 20px;
+  color: #fff;
 }
 
 .status {
   margin-bottom: 10px;
+}
+
+/***** Nabar Component *****/
+.NavbarItems {
+  background: linear-gradient(90deg, rgb(112, 108, 91) 0%, rgb(158, 148, 95));
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 70vw; /*View width*/
+  justify-content: end;
+  margin-right: 2rem;
+}
+
+.nav-links {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links:hover {
+  background-color: rgb(112, 108, 91);
+  border-radius: 4px;
+  transition: all 0.2s ease-out;
 }
