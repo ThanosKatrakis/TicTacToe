@@ -1,22 +1,24 @@
-import React, { Component } from 'react'
-import {MenuItems} from "./MenuItems"
+import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 
 class NavBar extends Component {
     render() {
         return (
-            <nav className="NavbarItems">
+            <header>
+                <nav className="NavbarItems">
                    <ul className="nav-menu">
-                        {MenuItems.map((item, index) => {
-                            return (
-                                <li key={index}>
-                                    <a className={item.cName} href={item.url}>
-                                    {item.title}
-                                    </a>
-                                </li>
-                            )
-                        })}
+                       <li>
+                           <Link to="/" className="nav-links">Game</Link>
+                       </li>
+                       <li>
+                           <Link to="/statistics" className="nav-links">Statistics</Link>
+                       </li>
+                       <li>
+                           <Link to="/settings" className="nav-links">Settings</Link>
+                       </li>
                    </ul>
-            </nav>
+                </nav>
+            </header>
         )
     }
 }
